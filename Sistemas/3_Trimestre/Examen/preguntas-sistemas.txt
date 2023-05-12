@@ -1,0 +1,351 @@
+Pregunta 1
+Se desea cambiar el grupo propietario de un archivo de alumnos a profesores. Estando logado con un usuario que pertenece solo al grupo alumnos. ¿Es necesario utilizar sudo?
+
+a.
+Sí.
+
+
+Pregunta 2
+Para descomprimir y desempaquetar el contenido de un fichero foo.tar.gz utilizaríamos el comando:
+
+d.
+tar -xzf foo.tar.gz
+
+Pregunta 3
+La opción -h del comando ls:
+
+La opción -h del comando ls se utiliza para mostrar el tamaño de los archivos en un formato legible para los humanos. Cuando se 
+utiliza esta opción, ls muestra el tamaño de los 
+archivos en una unidad de medida más fácil de comprender para los seres humanos, como kilobytes (KB), megabytes (MB) o gigabytes (GB).
+
+Pregunta 4
+¿Qué comando o método abreviado de Bash vuelve a ejecutar un comando específico de la lista del historial?
+
+a.
+!number
+!numero del comando en el history
+
+
+Pregunta 5
+Para empaquetar el contenido del directorio /etc en un solo archivo llamado etcbackup.tar. ¿Cuál de los siguientes comandos usarías?
+
+b.
+tar -cf /ruta/del/archivo/etcbackup.tar -C /etc .
+
+
+Pregunta 6
+¿Qué comando se usa para volver al directorio personal del usuario actual, asumiendo que el directorio de trabajo actual es /tmp?
+
+b.
+cd
+
+
+Pregunta 7
+Para eliminar la cuenta 'nemo' junto con su directorio personal ¿qué comando deberíamos utilizar?
+
+a.
+sudo userdel -r nemo
+
+
+Pregunta 8
+¿Qué directorio contiene datos de configuración de programas y del sistema?
+
+b.
+/etc
+
+
+Pregunta 9
+Indica de los siguientes directorios, cuál es el que contiene los dispositivos del sistema (discos duros, etc.):
+
+a.
+/dev
+
+
+Pregunta 10
+El comando mv permite renombrar varios archivos simultáneamente.
+
+a.
+False
+
+
+Pregunta 11
+Seleccione el nombre del archivo de dispositivo de la tercera partición en el segundo disco duro SATA.
+
+a.
+/dev/sdb3
+
+
+Pregunta 12
+Al ejecutar la orden sudo useradd pablo ¿Cuales de las siguentes operaciones ejecuta?
+
+b.
+Crea el usuario pablo.
+
+
+Pregunta 13
+Una carpeta tiene asignados los permisos 440. ¿Cuál de las siguientes afirmaciones sería correcta?
+
+c.
+El usuario y el grupo propietarios tienen permisos de lectura.
+
+
+Pregunta 14
+Se quiere mover todos los archivos con extensión html de la carpeta /etc a la carpeta /home/user ¿Cuál de los siguientes comandos sería válido?
+
+mv /etc/*.html /home/user/
+
+
+Pregunta 15
+Recibimos el archivo data79.tar y queremos conocer su contenido antes de desempaquetarlo ¿Qué comado deberíamos usar?
+
+b.
+tar tvf data79.tar
+
+
+Pregunta 16
+¿Qué comando o método abreviado de Bash muestra la lista de comandos anteriores?
+
+c.
+history
+
+
+Pregunta 17
+Si queremos obtener información/ayuda sobre el uso de un comando interno tendremos que ejecutar la orden:
+
+b.
+help comando
+
+Teniendo en cuenta que help comando solo funciona con los comandos internos y --help suele funcionar co todos
+
+Pregunta 18
+¿Qué comando o método abreviado de Bash copia el último argumento de comandos anteriores?
+
+a.
+Presionar Esc+.
+
+
+Pregunta 19
+¿Qué patrón coincidirá solo con los nombres de archivo donde el primer carácter no es 'b'?
+
+
+[!b]*
+
+
+Pregunta 20
+El comando para formatear una partición es:
+
+b.
+mkfs
+
+
+Pregunta 21
+Si se tiene un archivo con permisos r--r--r-- ¿ćomo se pueden cambiar a rwxr-xr-x?
+
+chmod 731 archivo1.txt 
+
+
+Pregunta 22
+¿Qué comando utilizariamos para copiar todos los ficheros regulares de una carpeta a /tmp?
+
+a.
+cp * /tmp
+
+
+Pregunta 23
+¿Que comando se debe usar para que todos los usuarios tengan permisos de ejecución sobre un archivo llamado file.txt, sin modificar el resto de permisos que tuviesen anteriormente?
+
+f.
+chmod 111 file.txt
+chmod +x,+x,+x file.txt
+
+Pregunta 24
+Los usuarios en Linux deben pertenecer al menos a un grupo.
+
+a.
+Verdadero.
+
+
+Pregunta 25
+¿Qué respuesta envía la salida a un archivo y envía los errores a un archivo diferente?
+
+b.
+>archivo 2>archivo2
+
+
+Pregunta 26
+¿Cuál es el nombre del archivo de dispositivo de un disco duro SATA completo en el directorio /dev?
+
+b.
+/dev/sda
+
+
+Pregunta 27
+Después de borrar una cuenta de usuario, podría darse el caso de que los archivos pertenecientes a la misma permanecieran en el ordenador.
+
+b.
+Verdadero.
+
+
+Pregunta 28
+Para saber el tipo de archivo usted debe usar la orden
+
+a.
+file
+
+
+Pregunta 29
+En un sistema Debian o derivado, se desea desinstalar el programa firefox junto con todos sus archivos de configuración ¿qué comando utilizarías?
+
+b.
+sudo apt-get purge firefox
+
+
+Pregunta 30
+Habitualmente en una distribución Linux el archivo /etc/passwd contiene:
+
+a.
+La lista de usuarios del sistema, con toda la info UID Password etd
+
+
+Pregunta 31
+¿De esta línea 'tester:x:1001:1002::/home/tester:/bin/sh' del fichero passwd qué podemos deducir?
+
+d.
+Las contraseñas se encuentran cifradas utilizando Shadow
+
+
+Pregunta 32
+¿Qué comando muestra la lista de puntos de montaje de sistemas de archivos y la cantidad de espacio libre disponible en cada uno?
+
+c.
+df -h
+
+
+Pregunta 33
+¿Qué respuesta envía tanto la salida como los errores a un archivo, lo crea o sobreescribe su contenido?
+
+b.
+2 &>archivo
+
+
+Pregunta 34
+De entre los siguientes comandos ¿cuál es una versión mejorada del more?
+
+e.
+less
+
+
+Pregunta 35
+Si el umask está definido en 002, al crear un archivo este se creará con los permisos:
+
+b.
+rwxrwxr-x
+
+
+Pregunta 36
+¿Qué respuesta muestra la salida a un terminal e ignora todos los errores?
+
+c.
+2>/dev/null
+
+
+Pregunta 37
+¿Qué patrón coincidirá solo con los nombres de archivo de al menos tres caracteres de longitud?
+
+a.
+???*
+
+
+Pregunta 38
+Seleccione la opción correcta para montar el dispositivo sdb1 en /media/external.
+
+d.
+mount /dev/sdb1 /media/external
+
+
+Pregunta 39
+De los siguientes comandos ¿cuál nos permite cambiarnos a la carpeta personal de nuestro usuario?
+
+b.
+cd
+
+
+Pregunta 40
+El comando man 5 passwd hará lo siguiente:
+
+d.
+Muestra la página del manual de la sección 5 para passwd.
+
+
+Pregunta 41
+Si ejecutamos las líneas órdenes echo hola > saludo.txt y echo buenos dias >> saludo.txt
+
+a.
+Ninguna de las respuestas es correcta.
+Pero seia que crea saludo txt y mete hola y en el segundo agrega en la linea siguiente linea escribe buenos dias
+
+
+Pregunta 42
+¿Qué respuesta envía la salida tanto a la pantalla como a un archivo al mismo tiempo?
+
+b.
+| tee archivo
+Mirar redhat academy
+
+Pregunta 43
+Para borrar un directorio que NO está vacío se puede usar la siguiente orden:
+
+d.
+rm -r ruta
+
+
+Pregunta 44
+Para instalar el programa firefox en un sistema basado en RedHat ¿cuál de los siguientes comandos utilizarías?
+
+a.
+yum install firefox
+o 
+sudo dnf install firefox
+
+
+
+Pregunta 45
+En un sistema Debian o derivado, para actualizar el programa firefox a la última versión disponible ¿qué comando utilizarías?
+
+d.
+sudo apt-get install firefox
+
+
+Pregunta 46
+Los permisos rw--wxr-x tienen el equivalente numérico:
+
+d.
+635
+
+
+Pregunta 47
+Si se tiene un archivo con permisos r--r--r-- ¿ćomo se pueden cambiar a rwxrwxr-x?
+
+chmod u+wx,g+wx,o+x archivo
+
+
+Pregunta 48
+El comando para buscar una cadena de texto en un archivo es:
+
+e.
+grep
+
+
+Pregunta 49
+¿Qué patrón coincidirá solo con los nombres de archivo que comienzan con una letra mayúscula?
+
+b.
+[[:upper:]]*
+
+
+Pregunta 50
+¿Cuál de los siguientes comandos permitiría cambiar el propietario del archivo somefile.txt del usuario ralph al usuario tony?
+
+e.
+chown tony somefile.txt
+

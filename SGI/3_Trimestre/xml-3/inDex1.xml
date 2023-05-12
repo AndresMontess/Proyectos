@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./XLST/Preguntas.xslt"?>
+<Formulario>
+	<Preguntas n="1">
+		<titulo>¿Qué significa XML?</titulo>
+		<opcion>A) Extensible Markup Language</opcion>
+		<opcion2>B) Extraordinary Markup Language</opcion2>
+		<opcion3>C) Extended Markup Library</opcion3>
+	</Preguntas>
+	<Preguntas n="2">
+		<titulo>¿Qué tipo de archivo es un archivo XML?</titulo>
+		<opcion>A) Texto</opcion>
+		<opcion2>B) Imagen</opcion2>
+		<opcion3>C) Audio</opcion3>
+	</Preguntas>
+	<Preguntas n="3">
+		<titulo>¿Cuál es la función principal de XML?</titulo>
+		<opcion>A) Almacenar datos de manera estructurada</opcion>
+		<opcion2>B) Ejecutar aplicaciones</opcion2>
+		<opcion3>C) Diseñar páginas web</opcion3>
+	</Preguntas>
+	<Preguntas n="4">
+		<titulo>¿Qué es un elemento en XML?</titulo>
+		<opcion>A) Un tag que contiene información</opcion>
+		<opcion2>B) Un atributo que define características</opcion2>
+		<opcion3>C) Un comentario dentro del código</opcion3>
+	</Preguntas>
+	<Preguntas n="5">
+		<titulo>¿Qué es un atributo en XML?</titulo>
+		<opcion>A) Una característica que define un elemento</opcion>
+		<opcion2>B) Un tag que contiene información</opcion2>
+		<opcion3>C) Una sección de código que se omite en la interpretación</opcion3>
+	</Preguntas>
+	<Preguntas n="6">
+		<titulo>¿Qué es un documento bien formado en XML?</titulo>
+		<opcion>A) Un documento que cumple con las reglas sintácticas de XML</opcion>
+		<opcion2>B) Un documento que contiene un gran número de elementos y atributos</opcion2>
+		<opcion3>C) Un documento que no es legible por humanos</opcion3>
+	</Preguntas>
+	<Preguntas n="7">
+		<titulo>¿Qué es un espacio de nombres en XML?</titulo>
+		<opcion>A) Un mecanismo para evitar conflictos de nombres en elementos y atributos</opcion>
+		<opcion2>B) Una sección de código que se omite en la interpretación</opcion2>
+		<opcion3>C) Un conjunto de tags predefinidos en XML</opcion3>
+	</Preguntas>
+	<Preguntas n="8">
+		<titulo>¿Qué es XSLT en XML?</titulo>
+		<opcion>A) Un lenguaje para transformar documentos XML en otros formatos</opcion>
+		<opcion2>B) Un lenguaje para definir elementos personalizados en XML</opcion2>
+		<opcion3>C) Un lenguaje para crear documentos HTML</opcion3>
+	</Preguntas>
+	<Preguntas n="9">
+		<titulo>¿Qué es XPath en XML?</titulo>
+		<opcion>A) Un lenguaje para buscar elementos y atributos en documentos XML</opcion>
+		<opcion2>B) Un lenguaje para crear documentos HTML</opcion2>
+		<opcion3>C) Un lenguaje para transformar documentos XML en otros formatos</opcion3>
+	</Preguntas>
+	<Preguntas n="10">
+		<titulo>¿Qué es XML Schema?</titulo>
+		<opcion>A) Un lenguaje para definir la estructura y contenido de documentos XML</opcion>
+		<opcion2>B) Un lenguaje para crear documentos HTML</opcion2>
+		<opcion3>C) Un lenguaje para transformar documentos XML en otros formatos</opcion3>
+	</Preguntas>
+</Formulario>

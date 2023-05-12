@@ -1,0 +1,7 @@
+El parámetro "/T" significa "traverse subdirectories" y se utiliza para aplicar el cambio de propiedad a
+todos los archivos y carpetas que se encuentran dentro de la carpeta especificada. Es decir, este parámetro
+hace que el comando aplique el cambio de propiedad de forma recursiva en todos los subdirectorios.
+
+El parámetro "/C" significa "continue on errors" y se utiliza para que el comando continúe ejecutándose 
+incluso si se producen errores durante el proceso. De esta forma, si el comando encuentra algún archivo
+o carpeta a los que no pueda acceder, no detendrá el proceso y seguirá ejecutándose hasta que se complete.

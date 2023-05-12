@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./XML-XLST/Peliculas_semana.xslt"?>
+<?xml-stylesheet type="text/css" href="./CSS/ESTILO.css"?>
+<Pelis>
+	<pelicula n="1">
+		<nombre>AVATAR: EL SENTIDO DEL AGUA</nombre>
+		<sinopsis>Varios años después de los sucesos ocurridos en Avatar, volvemos a Pandora donde Jake Sully y Neytiri han formado una familia. La pareja formada por el ex-humano amigo de los Na'vi y la hija del anterior jefe del clan, además de sus hijos, viajarán más allá de los bosques de Pandora a entornos subacuáticos y volcánicos.</sinopsis>
+		<Actores>Sam Worthington, Zoe Saldana, Sigourney Weaver, Oona Chaplin, Stephen Lang, Kate Winslet, Michelle Yeoh, Giovanni Ribisi</Actores>
+		<Director>James Cameron</Director>
+		<Disponible>HFR 3D : Kinépolis GranadaKinépolis Madrid DiversiaKinépolis Alicante Plaza Mar 2Kinépolis Full (Splau)Kinépolis Madrid Ciudad de la ImagenKinépolis NevadaKinépolis La Cañada (Marbella)Kinépolis Mataró Parc
+        3D : Kinépolis GranadaKinépolis Nevada
+        4DX 3D : Kinépolis Madrid DiversiaKinépolis Madrid Ciudad de la ImagenKinépolis Valencia
+        Atmos : Kinépolis Full (Splau)
+        2D : Kinépolis Valencia
+        HFR : Kinépolis Valencia</Disponible>
+		<foto>.\IMG\AVATAR.jpg</foto>
+		<trailer>https://www.youtube.com/watch?v=FSyWAxUg3Go</trailer>
+	</pelicula>
+	<pelicula n="2">
+		<nombre>Super Mario Bros: La película</nombre>
+		<sinopsis>De la mano de Nintendo, Universal Pictures e Illumination llega a los cines una nueva película de animación basada en el mundo de Super Mario Bros.</sinopsis>
+		<Director>Aaron Hovarat, mickael</Director>
+		<Disponible>2D : Kinépolis GranadaKinépolis Madrid DiversiaKinépolis Alicante Plaza Mar 2Kinépolis AlziraKinépolis Full (Splau)Kinépolis Madrid Ciudad de la ImagenKinépolis NevadaKinépolis ValenciaKinépolis La Cañada (Marbella)Kinépolis Mataró Parc
+        3D : Kinépolis GranadaKinépolis Alicante Plaza Mar 2Kinépolis Full (Splau)Kinépolis La Cañada (Marbella)Kinépolis Mataró Parc
+        4DX 3D : Kinépolis Madrid DiversiaKinépolis Madrid Ciudad de la ImagenKinépolis Valencia
+        Laser Ultra : Kinépolis Full (Splau)Kinépolis Madrid Ciudad de la Imagen
+        Atmos : Kinépolis Full (Splau)</Disponible>
+		<foto>./IMG/MARIO.jpg</foto>
+		<trailer>https://www.youtube.com/watch?v=uSDMbe64zTg</trailer>
+	</pelicula>
+	<pelicula n="3">
+		<nombre>SHAZAM! LA FURIA DE LOS DIOSES</nombre>
+		<sinopsis>Billy Batson y sus compañeros adoptados han recibido los poderes de los dioses pero aún están aprendiendo a compaginar sus vidas de adolescentes con sus alter-egos superheróicos. Pero cuando las Hijas de Atlas, un vengativo trío de antiguos dioses, llegan a la Tierra en busca de la magia que les robaron hace mucho tiempo, Billy -alias Shazam- y su familia se ven envueltos en una batalla por sus superpoderes, sus vidas y el destino de su mundo.</sinopsis>
+		<Actores>Djimon Hounsou, Lucy Liu, Helen Mirren, Adam Brody, Rachel Zegler, Grace Caroline Currey, Zachary Levi, Meagan Good</Actores>
+		<Director>David F. Sandberg</Director>
+		<Disponible>2D : Kinépolis GranadaKinépolis Madrid DiversiaKinépolis Alicante Plaza Mar 2Kinépolis AlziraKinépolis Full (Splau)Kinépolis Madrid Ciudad de la ImagenKinépolis NevadaKinépolis ValenciaKinépolis La Cañada (Marbella)Kinépolis Mataró Parc
+            4DX 2D : Kinépolis Madrid DiversiaKinépolis Madrid Ciudad de la ImagenKinépolis Valencia
+            Atmos : Kinépolis Full (Splau)
+            Laser Ultra : Kinépolis Full (Splau)Kinépolis Madrid Ciudad de la Imagen
+            ScreenX 2D : Kinépolis Madrid Ciudad de la Imagen</Disponible>
+		<foto>./IMG/SHAZAM.jpg</foto>
+		<trailer>https://www.youtube.com/watch?v=Q__dO3pEYDU</trailer>
+	</pelicula>
+</Pelis>

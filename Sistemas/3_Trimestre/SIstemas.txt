@@ -1,0 +1,3 @@
+Depende del permiso ya que los de lectura y ejecuccion pueden tenerse, pero no tiene porque tener modificacion, por lo cual
+no dependen unos de otros pero si le otorgamos control total los anteriores dependen del control total
+No me permite cambiar los permisos

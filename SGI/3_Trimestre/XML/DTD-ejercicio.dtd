@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD generado por XMLSpy v2023 rel. 2 (x64) (http://www.altova.com/es) -->
+<!ELEMENT ROW (cod_paciente, Nombre, Apellido, Apellido2, Localidad, Provincia, Edad, Email, Historia)>
+<!ELEMENT DATA (ROW)>
+<!ELEMENT Edad (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellido (#PCDATA)>
+<!ELEMENT Historia (#PCDATA)>
+<!ELEMENT Apellido2 (#PCDATA)>
+<!ELEMENT Localidad (#PCDATA)>
+<!ELEMENT Provincia (#PCDATA)>
+<!ELEMENT cod_paciente (#PCDATA)>

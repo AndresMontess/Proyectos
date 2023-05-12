@@ -1,0 +1,163 @@
+/**************************************************************************/
+/*Este script SQL crea la base de datos  y todas sus tablas*/
+/*************************************************************************/
+/**************************************************************************/
+/*Este script SQL crea la base de datos y sus tablas*/
+/*************************************************************************/
+
+DROP database clinica2022;
+/*Creamos la base de datos */
+CREATE DATABASE IF NOT EXISTS clinica2022
+DEFAULT CHARACTER SET utf8 
+DEFAULT COLLATE utf8_general_ci;
+-- ponemos en uso (activamos) la base de datos
+USE clinica2022;
+
+DROP TABLE IF EXISTS Pacientes;
+DROP TABLE IF EXISTS Medicos;
+DROP TABLE IF EXISTS Ingresos;
+
+
+CREATE TABLE Pacientes (
+	cod_paciente VARCHAR(2),
+	Nombre VARCHAR(20) NOT NULL,
+    Apellido VARCHAR(20) NOT NULL,
+    Apellido2 VARCHAR(20) NOT NULL,
+    Localidad VARCHAR(20) NOT NULL,
+    Provincia VARCHAR(60) NOT NULL,
+    Edad TINYINT NOT NULL,
+    Email VARCHAR(25) NULL DEFAULT 'Sin Correo',
+    Historia VARCHAR(45) NULL,
+    CONSTRAINT PK_PACIENTES  PRIMARY KEY (cod_paciente)
+) ENGINE=InnoDB;
+
+CREATE TABLE Medicos (
+    N_colegiado VARCHAR(4),
+    Nombre VARCHAR(20) NOT NULL,
+    Apellido VARCHAR(20) NOT NULL,
+    Apellido2 VARCHAR(20) NOT NULL,
+    Especialidad ENUM ('Pediatría','Intensivista','Cardiólogo','Trauma','Covid'),
+    Cargo VARCHAR(20),
+ constraint PK_MEDICOS PRIMARY  KEY (N_colegiado)
+)ENGINE=INNODB;
+
+CREATE TABLE Ingresos(
+    Cod_ingreso INT NOT NULL AUTO_INCREMENT,
+    Fecha_ingreso DATE NOT NULL, 
+    Fecha_alta DATE NOT NULL,
+    Urgencias VARCHAR(1) DEFAULT 'N',
+    Coste float DEFAULT '200', 
+    Diagnostico VARCHAR(25),
+    Cod_paciente VARCHAR(2),
+    N_colegiado VARCHAR(4),
+    CONSTRAINT PK_INGRESOS PRIMARY KEY(Cod_ingreso),
+    CONSTRAINT FK_PACIENTE foreign key (Cod_paciente) REFERENCES PACIENTES (Cod_paciente)ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FK_MEDICOS foreign key (N_colegiado ) REFERENCES MEDICOS (N_colegiado)ON DELETE CASCADE ON UPDATE CASCADE
+) engine=INNODB;
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('1111', 'Lucia ', 'García', 'Diaz', 'Pediatría', 'R2');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('2222', 'Hernán ', 'Martín', 'Diaz', 'Pediatría', 'Jefe de sevicio');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('3333', 'Inés', 'Esteban', 'Diaz', 'Cardiólogo', 'Jefe de sevicio');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('4444', 'David ', 'Lopez', 'Perez', 'Cardiólogo', 'R4');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('5555', 'Daniel', 'Etreros','Perez', 'Trauma', 'R3');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('6666', 'Gabriel', 'Lopez','Perez', 'Trauma', 'R4');
+
+INSERT INTO medicos (N_colegiado, Nombre, Apellido, Apellido2, Especialidad, Cargo)
+VALUES ('9999', 'Gabriel', 'Martinez','Perez', 'Covid', 'R9');
+
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('01', 'Marta', 'Muñoz', 'Lopez', 'Leganes', 'Madrid', '45', 'marta01@gmail.com', 'http://historia01.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('02', 'Amudena', 'Lopez', 'Lopez', 'Toledo', 'Toledo', '8', 'almu02@gmail.com', 'http://historia02.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('03', 'Dolores', 'Rodríguez', 'Rodríguez', 'Toledo', 'Toledo', '70', NULL, 'http://historia03.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('04', 'Alicia', 'Rodríguez', 'González', 'Alcorcón', 'Madrid', '30', 'alicia.live.com', 'http://historia04.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('05', 'Carolina', 'Rey', 'González', 'Frigiliana', 'Malaga', '20', 'carolina23.live.com', 'http://historia05.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('06', 'Carmen', 'Martos', 'González', 'Nerja', 'Malaga', '10', NULL, 'http://historia06.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('07', 'Laura', 'Fernández', 'González', 'Antequera', 'Malaga', '19', NULL, 'http://historia07.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('08', 'Alberto', 'Fernández', 'Vargas', 'Mostoles', 'Madrid', '59', NULL, 'http://historia08.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('09', 'Alberto', 'Vargas', 'Vargas', 'Antequera', 'Malaga', '59', NULL, 'http://historia09.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('10', 'Lola', 'Púlido', 'González', 'Talavera de la Reina ', 'Toledo', '19', NULL, 'http://historia10.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('11', 'Pedro', 'Rivero', 'Rivero', 'Alcalá del Júcar', 'Albacete', '59', NULL, 'http://historia11.com');
+
+INSERT INTO pacientes(cod_paciente, Nombre, Apellido, Apellido2, Localidad,Provincia, Edad, Email, Historia) 
+VALUES ('12', 'Andres', 'Catalina', 'Blazquez', 'Alcorcon', 'Madrid', '19', NULL, 'http://historia12.com');
+
+
+INSERT INTO ingresos (Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2021-03-01', '2021-03-09', 'S', '2000', 'ROTURA DE CADERA', '09', '5555');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2021-01-01', '2021-01-09', 'S', '2000', 'ROTURA DE MENISCO', '01', '5555');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2021-07-11', '2021-07-13', 'N', '400.22', 'GRIPE', '02', '1111');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2021-11-11', '2021-07-13', 'N', '2070.258', 'FIEBRE ALTA', '02', '1111');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-03-11', '2020-03-12', 'N', '470.258', 'FIEBRE ALTA', '02', '1111');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2021-11-11', '2021-07-13', 'S', '2000', 'Microtraumatismos ', '03', '6666');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-07-11', '2020-07-13', 'S', '1255', 'Microtraumatismos ', '04', '6666');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-09-11', '2020-09-13', 'S', '2000', 'cardiomiopatía', '05', '3333');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-11-11', '2020-11-19', 'S', '2800', 'cardiomiopatía', '05', '3333');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-11-11', '2020-11-19', 'S', '2000', 'cardiomiopatía', '06', '1111');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-11-11', '2020-11-19', 'S', '2500', 'cardiomiopatía', '07', '4444');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-11-11', '2020-11-19', 'S', '2000', 'cardiomiopatía', '08', '5555');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-11-11', '2020-11-19', 'S', '5000', 'ROTURA DE MENISCO', '10', '5555');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-10-11', '2020-11-19', 'S', '5000', 'ROTURA DE MENISCO', '11', '5555');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2020-12-25', '2020-12-29', 'S', '2500', 'cardiomiopatía', '07', '4444');
+
+INSERT INTO ingresos ( Fecha_ingreso, fecha_alta, Urgencias, Coste, Diagnostico, Cod_paciente, N_colegiado) 
+VALUES ('2023-01-11', '2023-01-21', 'S', '30', 'Covid', '12', '9999');

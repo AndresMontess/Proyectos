@@ -1,0 +1,15 @@
+<!DOCTYPE DATA SYSTEM "C:\Users\madrid\Documents\Andres\SGI\3_Trimestre\XML\DTD-ejercicio.dtd">
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/madrid/Documents/Andres/SGI/3_Trimestre/XML/XLS-Ejercicio1.xslt"?>
+<DATA>
+	<ROW>
+		<cod_paciente>08</cod_paciente>
+		<Nombre>Alberto</Nombre>
+		<Apellido>Fernández</Apellido>
+		<Apellido2>Vargas</Apellido2>
+		<Localidad>Mostoles</Localidad>
+		<Provincia>Madrid</Provincia>
+		<Edad>59</Edad>
+		<Email>NULL</Email>
+		<Historia>http://historia08.com</Historia>
+	</ROW>
+</DATA>

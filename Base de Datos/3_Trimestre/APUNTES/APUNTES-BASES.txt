@@ -1,0 +1,22 @@
+Funciones MYSQL te devuelve un valor de alguna cosa de una columna, ya sea count(*) o count(Cod_Medicos),
+select max(coste). Tanto Count como Max son funciones, tambien concat es otra funciones, los usuarios puden hacer funciones.
+Upper Lenght lower son otros ejemplos de funciones, 
+Permisos asocioados alas funciones permisos Create Routine, 
+Create Routine )(Crear rutina)
+Execute(Ejecuccion)
+Alter Routine(ALterar Rutine)
+
+
+
+Create Function Contar ()
+Returns Interger
+Deterministict
+Begin 
+Declare numero  in default 0;
+Select count(*) into numrto from actor;
+Return 1;
+end//
+
+
+
+

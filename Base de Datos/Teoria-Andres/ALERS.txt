@@ -1,0 +1,47 @@
+Alter table médicos add formación varchar(20) ;
+
+Alter table médicos add publicaciones varchar(20) not null ;
+
+Insert into médicos (N_colegiado,Publicaciones) values (8799,’Publicado libros’)
+
+Alter table médicos modify cargo varchar(50)
+
+Alter table ingresos add radiografías varchar(20) after diagnostico
+
+Alter table ingresos drop foreign key Fk_Pacientes
+
+Alter table médicos modify Especialidad ENUM ('Pediatría','Intensivista','Cardiólogo','Trauma')
+
+Drop Table ingresos
+
+Drop database Clinica2022
+
+left outer join  entre pacientes y ingresos izquierda el primero
+el right igual pero a la derecha, todo depende de la  tabla que pongas primero
+
+group by columna1, columna2 
+having count(*)>3;
+
+count funcion utilizada para contar cosas porejemplo locaclidades
+
+Groub by agrupar por cosas por ejemplo poblacion 
+
+
+select *
+from pacientes
+group by Locacildad/poblacion 
+
+
+
+
+
+Select count(*), Localidad
+from pacientes
+goup by poblacion;
+
+
+
+
+
+
+

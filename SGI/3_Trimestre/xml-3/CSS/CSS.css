@@ -1,0 +1,52 @@
+body{
+	background-color: lightblue;
+}
+main{
+	width: 80%;
+	margin:auto;
+}
+header{
+	background-image:url(../IMG/imagenfoca.jpg);
+	size: 1em;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 50px;
+	background-size: 150px;
+}
+.titulo{
+	text-align: center;
+	color:gold;
+}
+h2{
+	text-align: center;
+}
+.buttons{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	text-align:center;
+	width: 75%;
+	margin: auto;
+background-color:orange;
+}
+.boton{
+	display: flex;
+	flex-flow: column;
+	align-items:end;
+}
+nav{
+	text-align:center;
+padding:5px
+}
+ul>li{
+	display:inline;
+	text-decoration:none;
+	text-align:center;
+padding:5px;
+}
+a{
+	text-decoration: none;
+}
+div{
+background-color:lightgreen;
+}

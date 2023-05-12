@@ -1,0 +1,52 @@
+body
+{
+	background-color:#000066;
+color:white;
+}
+
+.nav{
+text-align:center;
+with:60%;
+margin:auto;
+background-color:orange;
+}
+.nav2{
+
+text-align:center;
+text-decoration:None;
+}
+
+.padre{
+width:80%;
+margin:auto;
+display: flex;
+align-items:center;
+flex-direction:row;
+}
+.padre > .imagen{
+width:20%;
+margin: AUTO;
+padding: 20px;
+font-size: 30px;
+}
+.imagen{
+size:90px;
+}
+.nombre{
+	width:20%;
+  margin: AUTO;
+}
+h1{
+text-align:center;
+
+}
+a{
+width:80%;
+margin:auto;
+}
+.padre2{
+width:80%;
+margin:auto;
+display:flex;
+padding:10px;
+}
