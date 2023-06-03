@@ -1,0 +1,1 @@
+Crear un procedimiento que guarde la informacion de los ingresos de dos provincias

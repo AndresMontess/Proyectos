@@ -1,0 +1,13 @@
+Shellfor
+
+Microsoft Dynamics 365
+Pero hay que decir, que la plataforma en la nube Microsoft Dynamics 365, ahora si que muestra una estrategia corporativa coherente
+y sobre todo muy clara.
+A pesar de no ser un veterano en la nube como por ejemplo Netsuite, muestra una flexibilidad y 
+escalabilidad encomiables con una integración bastante sencilla para los sistemas de terceros.
+Tanto desde las PYMES más pequeñas hasta organizaciones empresariales grandes adoptan con mucha
+velocidad este ecosistema de Microsoft.
+Su punto flaco más notorio es que tiene aún un ecosistema muy compartimentado,
+además de permitir mucha flexibilidad en cuanto a la administración (en la solución de Microsoft
+lo más importante es el integrador del sistema), lo cual puede generar problemas innecesarios durante la transformación digital 
+con la herramienta, si no es bien manejado.

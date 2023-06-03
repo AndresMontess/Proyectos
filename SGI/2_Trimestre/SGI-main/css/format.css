@@ -1,0 +1,185 @@
+nav {
+    /*NAV*/
+    display: grid;
+    grid-template-columns: 6% 74% 20%;
+    /*Ajusta las columnas del grid*/
+
+}
+
+.ul_logo {
+    /*NAV*/
+    display: contents;
+}
+
+.li_nav {
+    /*NAV*/
+    display: inline;
+    /*Hace que se vea en linea la lista*/
+}
+
+
+.p_nav {
+    /*NAV*/
+    display: inline;
+    /*Hace que se vea en linea la lista*/
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: wwf;
+}
+
+.logo_header {
+    /*NAV*/
+    width: 100%;
+
+}
+
+.busqueda {
+    /*NAV*/
+    background-image: url(./../img/busqueda-de-lupa.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    height: 22px;
+    border: none;
+    position: absolute;
+    margin-left: 1%;
+}
+
+.flex1 {
+    /*NOTICIAS*/
+    display: flex;
+}
+
+.titulo {
+    /*NOTICIAS*/
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-bottom: 55px;
+    line-height: 1;
+    text-align: center;
+    font-family: wwf;
+}
+
+hr {
+    /*NOTICIAS*/
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 25px auto;
+    background: orangered;
+}
+
+.primeraimagen,
+.segundaimagen,
+.terceraimagen {
+    /*NOTICIAS*/
+    height: 300px;
+    width: 100%;
+}
+
+.cursiva {
+    /*NOTICIAS*/
+    font-style: italic;
+}
+
+.color_naranja {
+    /*NOTICIAS*/
+    color: orange;
+}
+
+.formato_texto {
+    /*NOTICIAS*/
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+.font30 {
+    /*NOTICIAS*/
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: black;
+    letter-spacing: 1px;
+    font-family: wwf;
+}
+
+.div_imagenes {
+    /*NOTICIAS*/
+    width: 80%;
+    margin: auto;
+}
+
+.div_img1 {
+    /*NOTICIAS*/
+    padding: 1%;
+}
+
+.div_img2 {
+    /*NOTICIAS*/
+    padding: 1%;
+}
+
+.div_img3 {
+    /*NOTICIAS*/
+    padding: 1%;
+}
+
+.flex_noticiaspublicaciones {
+    /*NOTICIAS*/
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_noticiaspublicaciones>p {
+    /*NOTICIAS*/
+    background-color: orangered;
+    margin: 2px;
+    padding: 10px;
+    width: 10%;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: wwf;
+}
+
+.myDiv {
+    background-image: url(https://wwfint.awsassets.panda.org/img/medium_ww1253752_768857.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+    width: 100%;
+    height: 200%;
+    margin: auto;
+    margin-top: -12em;
+}
+
+.myDiv2 {
+    margin-top: 180px;
+    margin-left: 15px;
+    width: 500px;
+}
+
+.boton {
+    color: white;
+    background-color: #a14a0a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+}
+
+.titulo2 {
+    color: white;
+    font-family: wwf;
+    margin-top: 2%;
+    font-size: 6em;
+}
