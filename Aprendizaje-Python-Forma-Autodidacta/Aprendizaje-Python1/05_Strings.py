@@ -54,4 +54,6 @@ print("1".isnumeric())
 print(language.lower())
 print(language.upper().isupper())
 print(language.lower().isupper())
+#Python distingue entre mayusculas y misnusculas
+print(language.startswith("py"))
 print(language.startswith("y"))

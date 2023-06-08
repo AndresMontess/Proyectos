@@ -4,8 +4,8 @@ print(3 + 4)
 print(3 - 4)
 print(3 * 4)
 print(3 / 4)
-print(10 // 3)
-print(2 ** 3)
+print(10 // 3) #Division de enteros
+print(2 ** 3)# Exponente
 print(2 ** 3 + 3 - 7 / 1 //4)
 
 print("Hola " + "Python " + "¿Que tal?")
@@ -61,7 +61,7 @@ print("")
 print(3 < 4 and "Hola" < "Python")
 print(3  < 4 or "Hola" < "Python" and 4 == 4)
 print("")
-
+#Not niega la condición, es decir si la condicion reslutaba false mostraba true, y si tenemos una respuesta de true tenemos un false
 print(not (3 > 4))
 
 

@@ -7,7 +7,7 @@ print(my_variable)
 my_int_val = 5
 print(my_int_val)
 
-my_bolean_val = False
+my_bolean_val = True
 print(my_bolean_val)
 
 #Concatenacion de variables en un print
