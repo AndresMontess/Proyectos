@@ -33,9 +33,9 @@ def my_function(Word1, Word2) :
         lista_word2.sort()
         print(lista_word2)
         if lista_word1 == lista_word2:
-            print("Estas palabras son anagramas")
+            print("True")
         else:
-            print("Estas palabras no son anagramas")
+            print("False")
 
 
 my_function("elefante", "leefante")
