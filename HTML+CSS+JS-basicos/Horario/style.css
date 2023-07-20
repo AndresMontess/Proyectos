@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(320deg, #eb92be, #ffef78,#63c9b4);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    border-radius: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+tr:hover {
+    background-color: #33ff00;
+    border-radius: 16px;
+}
